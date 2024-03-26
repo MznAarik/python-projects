@@ -24,13 +24,17 @@ if (client_name == 1):
                 f.write(ram_diet + " : [" + str(get_date()) + "]\n")
                 f.close()
                 print("Your diet is been successfully recorded!")
+                input()
         # to retrieve the record
         elif client_choice == 2:
-            with open("ramD.txt", "r+") as f:
+            with open("ramD.txt", "r") as f:
+                print("________Your recent diet________ \n")
                 print(f.read())
                 f.close()
+                input()
         else:
             print("ERROR! Enter your correct choice!!")
+            input()
     # for exercise
     elif (client_data == 2):
         if (client_choice == 1):
@@ -40,14 +44,20 @@ if (client_name == 1):
                 f.write(ram_exer + " : [" + str(get_date()) + "]\n")
                 f.close()
                 print("Your diet is been successfully recorded!")
+                input()
         elif(client_choice == 2):
             with open ("ramE.txt", "r") as f:
+                print("________Your recent exercise________ \n")
+
                 print(f.read())
                 f.close()
+                input()
         else:
             print("ERROR! Enter correct choice!!")
+            input()
     else:
         print("Press correct input!!")
+        input()
 # for sita
 elif (client_name == 2):
     # for diet
@@ -59,12 +69,15 @@ elif (client_name == 2):
                 f.write(sita_diet + " : [" + str(get_date().date()) + "]\n")
                 f.close()
                 print("Your diet is been successfully recorded!")
+                input()
         elif(client_choice == 2):
             with open ("sitaE.txt", "a") as f:
+                print("________Your recent diet________ \n")
                 print(f.read())
                 f.close()
         else:
-            print("ERROR! Enter correct choice!")          
+            print("ERROR! Enter correct choice!")
+            input()          
     #for exercise
     elif(client_data == 2):
         if(client_choice == 1):
@@ -74,14 +87,18 @@ elif (client_name == 2):
                 f.write(sita_exer + "[" + str(get_date()) + "]" + "\n")
                 f.close()
                 print("Your exercise is been successfully recorded")
+                input()
         elif(client_choice == 2):
             with open("sitaE.txt") as f:
+                print("________Your recent exercise________ \n")
                 print(f.read())
                 f.close()
         else:
             print("ERROR! Please enter correct choice!!")
+            input()
     else:
         print("Press correct input!!")
+        input()
 # for shyam
 elif (client_name == 3):
     #for diet
@@ -93,8 +110,10 @@ elif (client_name == 3):
                 f.write(shyam_diet + "[" + str(get_date()) +"]" + "\n")
                 f.close()
                 print("Your diet is been recorded successfully!")
+                input()
         elif(client_choice == 2):
             with open ("shyamD.txt", "r") as f:
+                print("________Your recent diet________ \n")
                 print(f.read())
                 f.close()
     #for exercise
@@ -105,16 +124,22 @@ elif (client_name == 3):
                 shyam_exer = str(input())
                 f.write(shyam_exer + "[" + str(get_date()) +"]" + "\n")
                 print("Your exercise is been recorded successfully!")
+                input()
                 f.close()
         elif (client_choice == 2):
             with open ("shyamE.txt", "r") as f:
+                print("________Your recent exercise________ \n")
                 print(f.read())
                 f.close()
+                input()
         else:
             print("Error! Enter correct choice!")
+            input()
     else:
         print("Press correct input!!")
+        input()
 # if user inputs more than 3
 else:
     print("Invalid Client!!")
+    input()
         
