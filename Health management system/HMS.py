@@ -3,8 +3,8 @@
 
 #retrieving time stamp
 def get_date():
-    import datetime
-    return datetime.datetime.now()
+    import time
+    return time.asctime(time.localtime(time.time()))
 
 print("Enter 1:Ram 2:Sita 3:Shyam")
 client_name = int(input())
