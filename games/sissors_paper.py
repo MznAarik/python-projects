@@ -65,7 +65,7 @@ while rounds > 0:
 
     rounds -= 1
 
-print("------- TOTAL SCORE AMONG", total_rounds, "ROUNDS OF THE GAME -------")
+print("------- TOTAL SCORE OF", total_rounds, "ROUNDS OF THE GAME -------")
 print(f"The total draw matches among CPU and player: {draw_point} points")
 print(f"The total winning matches among CPU and player: {player_point} points")
 print(f"The total lost matches among CPU and player: {cpu_point} points")
