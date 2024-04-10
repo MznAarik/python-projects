@@ -12,6 +12,7 @@ while rounds > 0:
     cpu_moves = ["sissors", "paper", "rock"]
     cpu_choice = random.choice(cpu_moves)
     
+    print("----------------------------------")
     print("Enter your move: 1. sissors, 2. paper, 3. rock")
     player_choice = int(input())
     
