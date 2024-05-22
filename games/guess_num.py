@@ -1,9 +1,9 @@
-num=27
+num=7
 guess=7
 
 print("Total  number of attempts left :",guess)
 while(guess!=0):
-    num1=int(input("Enter your guess: less then 100: "))
+    num1=int(input("Enter your guess: less then 200: "))
 
     if(num1==num):
         print("Congrats! Your guess is correct!")
